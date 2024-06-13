@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="../styles.css/rock-Advance.css">
+</head>
+<body>
+  <h2>Rock Paper & Scissors</h2>
+  <div class="button-container">
+    <button class="three-buttons" onclick="playGame('rock')">
+      <img class="img" src="./rock-emoji.png" alt="Rock">
+    </button>
+    <button class="three-buttons" onclick="playGame('paper')">
+      <img class="img" src="./paper-emoji.png" alt="Paper">
+    </button>
+    <button class="three-buttons" onclick="playGame('scissors')">
+      <img class="img" src="./scissors-emoji.png" alt="Scissors">
+    </button>
+  </div>
+  <div class="move-container">
+    <p class="js-ymove tex">You played: <span class="js-your-move"></span></p>
+    <p class="js-move tex">Computer played: <span class="js-computer-move"></span></p>
+  </div>
+  <p class="js-stat tex">Status</p>
+  <p class="js-score tex">Wins: 0, Losses: 0, Ties: 0</p>
+  <p>
+    <button class="b" onclick="resetGame()">Reset</button>
+    <button class="auto-play-button" onclick="autoplay();">Auto Play</button>
+  </p>
+
+  <script src="../scipts/rock,papers-Advance.js"></script>
+</body>
+</html>
